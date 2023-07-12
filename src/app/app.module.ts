@@ -11,6 +11,7 @@ import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { UserServiceService } from './services/user-service.service';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -35,7 +36,7 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatMenuModule
   ],
-  providers: [],
+  providers: [UserServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

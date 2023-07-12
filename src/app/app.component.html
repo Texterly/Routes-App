@@ -1,12 +1,7 @@
 <div>
   <h1>Hello Routes</h1>
-<!--  <nav>-->
-<!--    <a routerLink="">Home</a>-->
-<!--    <a routerLink="/login">Login</a>-->
-<!--    <a routerLink="/page1">Page1</a>-->
-<!--    <a routerLink="/page2">Page2</a>-->
-<!--  </nav>-->
   <router-outlet></router-outlet>
+  <p>Current time: {{service.getTime()}}</p>
   <button mat-button [matMenuTriggerFor]="menu">Navigation</button>
   <mat-menu #menu="matMenu" yPosition="below">
     <button mat-menu-item><a routerLink="">Home</a></button>
