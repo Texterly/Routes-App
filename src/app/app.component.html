@@ -1,12 +1,16 @@
-<div>
-  <h1>Hello Routes</h1>
-  <router-outlet></router-outlet>
-  <p>Current time: {{service.getTime()}}</p>
-  <button mat-button [matMenuTriggerFor]="menu">Navigation</button>
-  <mat-menu #menu="matMenu" yPosition="below">
-    <button mat-menu-item><a routerLink="">Home</a></button>
-    <button mat-menu-item><a routerLink="/login">Login</a></button>
-    <button mat-menu-item><a routerLink="/page1">Page1</a></button>
-    <button mat-menu-item><a routerLink="/page2">Page2</a></button>
-  </mat-menu>
+<div class="container">
+  <div>
+    <h1>Hello Routes</h1>
+    <p>Current time: {{service.getTime()}}</p>
+  </div>
+  <div>
+    <button mat-button [matMenuTriggerFor]="menu">Navigation</button>
+    <mat-menu #menu="matMenu" yPosition="below">
+      <button mat-menu-item><a routerLink="">Home</a></button>
+      <button mat-menu-item><a routerLink="/login">Login</a></button>
+      <button mat-menu-item><a routerLink="/page1">Page1</a></button>
+      <button mat-menu-item><a routerLink="/page2">Page2</a></button>
+    </mat-menu>
+  </div>
 </div>
+<router-outlet></router-outlet>

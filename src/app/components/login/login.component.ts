@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserInterface } from '../../inerfaces/login'
 
 @Component({
   selector: 'app-login',
@@ -6,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
+  // lastName:string;
+  // firstName:string;
+  // age:number;
+  // sex: string;
+  // email: string;
+  //
+  // getUserData(): Obsevable<UserInterface[]>  {
+  //
+  // }
 
   constructor() { }
 
