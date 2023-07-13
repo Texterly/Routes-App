@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserServiceService } from './services/user-service.service';
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -9,9 +10,21 @@ import { UserServiceService } from './services/user-service.service';
 })
 export class AppComponent {
   title = 'RouteProject';
-  currentTime: String;
+  currentTime$:Observable<string> = this.service.getTimeObservable();
+  // time!: string;
+  // subscription: Subscription = new Subscription();
 
-  constructor(public service: UserServiceService) {
-    this.currentTime = this.service.getTime().toLocaleTimeString();
-    }
+  constructor(private service: UserServiceService) {}
+
+  // ngOnInit() {
+  //   this.subscription.add(
+  //     this.currentTime$.subscribe((data: string) => {
+  //       this.time = data;
+  //     })
+  //   )
+  // }
+  //
+  // ngOnDestroy() {
+  //   this.subscription.unsubscribe();
+  // }
 }

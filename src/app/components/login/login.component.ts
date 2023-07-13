@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserInterface } from '../../inerfaces/login'
+import { UserServiceService } from '../../services/user-service.service';
+import { UserInterface } from '../../inerfaces/login';
 
 @Component({
   selector: 'app-login',
@@ -8,17 +9,9 @@ import { UserInterface } from '../../inerfaces/login'
 })
 export class LoginComponent implements OnInit {
 
-  // lastName:string;
-  // firstName:string;
-  // age:number;
-  // sex: string;
-  // email: string;
-  //
-  // getUserData(): Obsevable<UserInterface[]>  {
-  //
-  // }
+  user: UserInterface = this.service.getUserData();
 
-  constructor() { }
+  constructor(private service: UserServiceService ) { }
 
   ngOnInit(): void {
   }

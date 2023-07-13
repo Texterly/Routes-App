@@ -1,7 +1,8 @@
 <div class="container">
   <div>
     <h1>Hello Routes</h1>
-    <p>Current time: {{service.getTime()}}</p>
+<!--    <p>Current time: {{ time }}</p>-->
+    <p>Current time: {{ currentTime$ | async }}</p>
   </div>
   <div>
     <button mat-button [matMenuTriggerFor]="menu">Navigation</button>

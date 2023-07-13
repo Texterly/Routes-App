@@ -1,7 +1,9 @@
+export type Sex = 'm' | 'w';
+
 export interface UserInterface {
-  lastName:string;
+  lastName: string;
   firstName: string;
   age: number;
-  sex: string;
+  sex: Sex;
   email: string;
 }
