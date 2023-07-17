@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { UserServiceService } from './services/user-service.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,8 @@ import { UserServiceService } from './services/user-service.service';
     BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [UserServiceService],
   bootstrap: [AppComponent]

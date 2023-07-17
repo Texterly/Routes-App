@@ -1,13 +1,28 @@
 .container {
-  display: flex;
-  justify-content: space-between;
+  .nav {
+    display: flex;
+    align-items: center;
+
+    div {
+      margin-right: 10px;
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+      :hover {
+        background-color: #2d2d91;
+      }
+    }
+  }
 }
 
 button {
   margin-top: 30px;
 }
 
-a {
-  text-decoration: none;
-  color: #000000;
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7a7ae0;
 }
+
