@@ -1,0 +1,31 @@
+<div class="container">
+  <div>Sign In</div>
+
+  <form #register='ngForm'>
+    <div>
+      <label for="fname">First name</label>
+      <input type="text" id="fname" placeholder="First name" [(ngModel)]="form.fname" name="fname">
+    </div>
+
+    <div>
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" placeholder="First name" [(ngModel)]="form.lname" name="lname">
+    </div>
+
+    <div>
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Age" [(ngModel)]="form.age" name="age">
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="email" [(ngModel)]="form.email" name="age">
+    </div>
+
+    <div>
+      <input type="submit">
+    </div>
+
+  </form>
+  <p>First name {{form | json}}</p>
+</div>

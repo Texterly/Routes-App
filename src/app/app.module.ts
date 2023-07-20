@@ -7,11 +7,12 @@ import { HomeComponent } from './components/home/home.component';
 import { Page1Component } from './components/page1/page1.component';
 import { Page2Component } from './components/page2/page2.component';
 import { LoginComponent } from './components/login/login.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { UserServiceService } from './services/user-service.service';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     Page1Component,
     Page2Component,
     LoginComponent,
+    SignInComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatButtonModule,
     MatMenuModule,
+    FormsModule,
     ReactiveFormsModule,
   ],
   providers: [UserServiceService],

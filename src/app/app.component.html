@@ -1,15 +1,16 @@
 <div class="container">
   <nav>
     <div class="nav">
-      <div><a routerLink="">Home</a></div>
-      <div><a routerLink="/login">Login</a></div>
-      <div><a routerLink="/page1">Page1</a></div>
-      <div><a routerLink="/page2">Page2</a></div>
+      <button mat-raised-button color="primary"><a routerLink="">Home</a></button>
+      <button mat-raised-button color="primary"><a routerLink="/login">Login</a></button>
+      <button mat-raised-button color="primary"><a routerLink="/sgnIn">SignIn</a></button>
+      <button mat-raised-button color="primary"><a routerLink="/page1">About us</a></button>
+      <button mat-raised-button color="primary"><a routerLink="/page2">Description</a></button>
     </div>
-    <div class="currTime">
-      <!--    <p>Current time: {{ time }}</p>-->
-      <p>Current time: {{ currentTime$ | async }}</p>
-    </div>
+<!--    <div class="currTime">-->
+<!--      &lt;!&ndash;    <p>Current time: {{ time }}</p>&ndash;&gt;-->
+<!--      <p>Current time: {{ currentTime$ | async }}</p>-->
+<!--    </div>-->
   </nav>
 </div>
 <div>
