@@ -1,0 +1,17 @@
+<div class="container">
+  <!--  <div class="form">-->
+  <!--    <p>Last name: {{ user.lastName }}</p>-->
+  <!--    <p>First name: {{ user.firstName }}</p>-->
+  <!--    <p>Age: {{ user.age }}</p>-->
+  <!--    <p>Sex: {{ user.sex }}</p>-->
+  <!--    <p>E-mail: {{ user.email }}</p>-->
+  <!--  </div>-->
+  <div>Login page</div>
+  <form [formGroup]="profileForm">
+    <input placeholder="name" formControlName="firstName">
+    <input  placeholder="last name" formControlName="lastName">
+    <input placeholder="email" formControlName="email">
+    <input placeholder="password" formControlName="password">
+  </form>
+  <p>{{profileForm.valueChanges | async | json}}</p>
+</div>
